@@ -7,9 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 const CustomToolbar = () => {
-   const handleClick = () => {
-        console.log("clicked on icon!");
-      }
+   
      
   return (
     <div className="absolute top-[3px] right-[217px]">

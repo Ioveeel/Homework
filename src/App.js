@@ -3,23 +3,24 @@ import Form from './components/Form';
 import NewTable from './components/NewTable';
 import { UsersProvider }from './Context/usersContext';
 import { BrowserRouter } from 'react-router-dom';
+import EditItems from './components/EditItems';
 
 function App() {
   return (
     <>
-    <BrowserRouter>
     <UsersProvider>
+    <BrowserRouter>
      
-    <div>
-    </div>
+    
     <Routes>
       <Route path='/' element= {<NewTable/>} />,
       <Route path='/form' element= {<Form/>} />,
+      <Route path='/edit/:id' element= {<EditItems/>} />,
     </Routes>
    
     
-    </UsersProvider>
     </BrowserRouter>
+    </UsersProvider>
    </>
    );
 }
